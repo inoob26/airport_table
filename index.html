@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Quiz</title>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#hidenFieldsDeparture" aria-expanded="false" aria-controls="hidenFieldsDeparture" style="margin-top:50px;">Вылет</button>
+            <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#hidenFieldsArrive" aria-expanded="false" aria-controls="hidenFieldsArrive" style="margin-top:50px;margin-left:50px;">Прилет</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm collapse" id="hidenFieldsDeparture">
+            <h3 style="margin-top:10px;">Табло Вылета</h3>
+            <input id="starTimeDeparture" type="text" placeholder="с 00:00" style="margin-top:20px;width:80px;" >
+            <input id="endTimeDeparture" type="text" placeholder="По 00:00" style="margin-top:20px;width:80px; margin-left:50px;" >
+            <button type="button" class="btn btn-secondary" style="margin-left:50px;" onclick="getDeparture()">Показать рейсы вылета</button>
+            <a href="image.png" id="downloadDeparture" style="display:none;">
+              <button type="button"  class="btn btn-secondary" onclick="" >Скачать</button>
+            </a>
+            <div id="departureContent"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm collapse" id="hidenFieldsArrive">
+            <h3 style="margin-top:10px;">Табло Прилета</h3>
+            <input type="text" placeholder="с 00:00" style="margin-top:20px;width:80px;" id="starTimeArrive">
+            <input type="text" placeholder="По 00:00" style="margin-top:20px;width:80px; margin-left:50px;" id="endTimeArrive">
+            <button type="button" class="btn btn-secondary" onclick="getArrival()" style="margin-left:50px;">Показать рейсы прилета</button>
+            <a href="image.png" id="downloadArrive" style="display:none;">
+              <button type="button"  class="btn btn-secondary" onclick="" >Скачать</button>
+            </a>
+            <div id="arriveContent"></div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js.js"></script>
+
+  </body>
+</html>
