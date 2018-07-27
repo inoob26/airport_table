@@ -18,8 +18,9 @@ urllib3==1.23
 ```
 
 run Rest-API
+```
 python3 main.py
-
+```
 and then using index.html join it =)
 
 ######this code tested on Python 3
