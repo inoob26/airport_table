@@ -21,6 +21,6 @@ run Rest-API
 ```
 python3 main.py
 ```
-and then using index.html join it =)
+and then using index.html enjoy it =)
 
 ### this code tested on Python 3
